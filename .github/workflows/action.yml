@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Get issue numbers separated by commas
         id: get-issues
-        uses: mondeja/pr-linked-issues-action@v1.1.0dev
+        uses: mondeja/pr-linked-issues-action@v2.1.0
       - name: Print issue numbers
         run: echo ${{ steps.get-issues.outputs.issues }}
 
