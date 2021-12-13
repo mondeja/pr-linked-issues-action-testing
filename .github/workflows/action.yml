@@ -16,3 +16,11 @@ jobs:
         uses: mondeja/pr-linked-issues-action@v1.1.0dev
       - name: Print issue numbers
         run: echo ${{ steps.get-issues.outputs.issues }}
+
+  debug:
+    name: Debug action event webhook
+    runs-on: ubuntu-latest
+    steps:
+    - uses: JasonEtco/smee-action@v2
+      with:
+        channel: mondeja
